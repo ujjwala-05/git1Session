@@ -1,0 +1,79 @@
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git status
+On branch Ujjwala_Branch_1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Second File.txt
+        Third file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git add Second File.txt
+fatal: pathspec 'Second' did not match any files
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git add Second_File.txt
+fatal: pathspec 'Second_File.txt' did not match any files
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git status
+On branch Ujjwala_Branch_1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SecondFile.txt
+        Thirdfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git add SecondFile.txt
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git add Thirdfile.txt
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git status
+On branch Ujjwala_Branch_1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SecondFile.txt
+        new file:   Thirdfile.txt
+
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git commit -m "Added New Files"
+[Ujjwala_Branch_1 d48f62d] Added New Files
+ 2 files changed, 5 insertions(+)
+ create mode 100644 SecondFile.txt
+ create mode 100644 Thirdfile.txt
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git push
+fatal: The current branch Ujjwala_Branch_1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Ujjwala_Branch_1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$ git push --set-upstream origin Ujjwala_Branch_1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 372 bytes | 372.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Ujjwala_Branch_1' on GitHub by visiting:
+remote:      https://github.com/ujjwala-05/git1Session/pull/new/Ujjwala_Branch_1
+remote:
+To https://github.com/ujjwala-05/git1Session.git
+ * [new branch]      Ujjwala_Branch_1 -> Ujjwala_Branch_1
+branch 'Ujjwala_Branch_1' set up to track 'origin/Ujjwala_Branch_1'.
+
+Lenovo@DESKTOP-LOS2QLV MINGW64 ~/Desktop/Git (Ujjwala_Branch_1)
+$
